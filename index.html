@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="shortcut icon" href="project/pictures/" type="image/x-icon" />
+    <script src="project/documents/project.js"></script>
+    <link rel="stylesheet" href="project/documents/project.css">
+    <title>Simon Game</title>
+    </head>
+      <body class="body"  onload="init_start()" >
+        <span id="name" class="score_neon" style="font-size: 5vh;"></span><br>
+    <div class="backgroundimg"></div>
+    <a href="project/documents/game.html" id="bo">
+        <img src="project/pictures/STARTcircle.png" id="boimg">
+    </a>
+    <img src="project/pictures/START hand.png" id="bohand">
+    <a href="project/documents/instructions.html" id="bo" style="left:20vh;">
+      <img src="project/pictures/inst.png" id="boimg2">
+  </a>
+    <img src="project/pictures/START hand.png" id="bohand" style="left:28vh;">
+        <div class="neon" >Simon </div>
+        <div class="flux" >Game </div>
+        
+      <audio id="music" controls="" autoplay="" style="visibility:hidden" muted="muted">
+        <source src="project\music\mm.mp3" type="audio/mp3">
+        </audio>
+       
+       <div id="popup" class="popup" >
+        <div class="popup-content">
+          <h2>hi</h2>
+             <img src="project/pictures/waving_hand.gif" style="width:15vh;height:15vh;text-align:center;">
+            <p >Enter your name:</p>
+          <input type="text" id="nameInput" style="text-align:center"><br>
+          <button onclick="submitName()">Submit</button>
+        </div>
+      </div>
+     
+        
+</body>
+</html>

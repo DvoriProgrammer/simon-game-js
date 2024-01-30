@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "סיימון", ".", "{B260837B-BEFA-4912-8FB0-24EA59DB6431}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_7899"
+		Debug.AspNetCompiler.PhysicalPath = "..\סיימון\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_7899\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_7899"
+		Release.AspNetCompiler.PhysicalPath = "..\סיימון\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_7899\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "7899"
+		SlnRelativePath = "..\סיימון\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B260837B-BEFA-4912-8FB0-24EA59DB6431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B260837B-BEFA-4912-8FB0-24EA59DB6431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7816EBD-7EC7-4715-BC25-0FA08F45D6C5}
+	EndGlobalSection
+EndGlobal

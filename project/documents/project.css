@@ -1,0 +1,293 @@
+
+  #bo{
+   width: 10vw;
+    height: 10vw;
+    position:absolute;
+    border-radius:50%;
+    top: 58vh;
+    right: 30vh;
+    }
+   .body{
+        background-image: url("../pictures/1000_F_134115811_zDBMdIni0jDuAMVpFsovAK9H3xUcrTMg.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+       background-position:center center ;
+      z-index:1 ;
+      min-height: 700px;
+      background-attachment: fixed;
+      top: 10px;
+      opacity: 0.9;
+      }
+    #bohand{
+       width:10vw;
+      height:10vw;
+       bottom:7vh;
+       left:77vw;
+        position:absolute;
+      animation-name: animabout;
+      animation-duration:1.5s;
+      animation-iteration-count:infinite;
+  }
+  @keyframes animabout{
+      from{bottom:0; 
+      }
+      to{bottom:12vh;
+      }
+      }
+     #game{
+       background-color: black;
+     }
+    
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+.container {
+  display: table-cell;
+  text-align:center;
+  vertical-align: middle;
+}
+.neon {
+  text-align: center;
+  font-family: neon;
+  color: #a242fb;
+  font-size: 11vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #aa0af4;
+}
+.flux {
+  text-align: center;
+  font-family: neon;
+  color: #426DFB;
+  font-size: 11vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #2356FF;
+}
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+  top: 70vh;
+}
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #a242fb, 0 0 3vw #a242fb, 0 0 10vw #a242fb, 0 0 10vw #a242fb, 0 0 .4vw #f3a6f3, .5vw .5vw .1vw #5e2b64;
+    color: rgb(187, 54, 187);
+  }
+  50% {
+    text-shadow: 0 0 .5vw #a242fb, 0 0 1.5vw #a242fb, 0 0 5vw #a242fb, 0 0 5vw #a242fb, 0 0 .2vw #a242fb, .5vw .5vw .1vw #400a23;
+    color: #ee88dd;
+  }
+}
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+  top: 50vh;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+#bo {
+  --interval: 1s;
+  display: block;
+  text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(80%);
+  animation: flicker steps(150) var(--interval) 1s infinite;
+}
+
+#bo:nth-of-type(1){
+  --color1: yellow;
+  --color2: lime;
+  --color3: green;
+  --color4: darkgreen;
+  font-family: Monoton;
+}
+
+@keyframes flicker {
+  50% {
+    color: white;
+    filter: saturate(200%) hue-rotate(20deg);
+  }
+}
+.score_neon {
+  font-size:10vh;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+#light_blue{
+  width: 21vw;
+  position:absolute;
+  left: 53vw;
+  top: 7vw;
+}
+#purple{
+  width: 21vw;
+  position: absolute;
+  left: 52vw;
+  top:22vw;
+}
+#red{
+  width: 21vw;
+  position: absolute;
+  left:39.5vw;
+  top: 27vw;
+}
+#green{
+  width: 21vw;
+  position: absolute;
+  left: 27vw;
+  top: 22vw;
+}
+#yellow{
+  width: 21vw;
+  position: absolute;
+  left: 27vw;
+  top: 5vw;
+}
+#orange{
+  width: 22vw;
+  position: absolute;
+  left: 39.5vw;
+  top: 0vw;
+}
+#startBtr{
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color:     0 0 90px #0ff,; -webkit-box-shadow: 0 0 3px     0 0 90px #0ff,; }
+  50% { background-color:  #a242fb; -webkit-box-shadow: 0 0 40px  #a242fb; }
+  100% { background-color: #1041FF; -webkit-box-shadow: 0 0 3px  #1041FF; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color:  #0ff; -moz-box-shadow: 0 0 3px  #1041FF; }
+  50% { background-color: #a242fb; -moz-box-shadow: 0 0 40px  #0ff; }
+  100% { background-color: #1041FF; -moz-box-shadow: 0 0 3px #a242fb; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color:  #0ff; box-shadow: 0 0 3px #a242fb; }
+  50% { background-color:#af5aff; box-shadow: 0 0 40px #1041FF; }
+  100% { background-color: #1041FF; box-shadow: 0 0 3px  rgb(25, 202, 202); }
+}
+
+@keyframes glowing {
+  0% { background-color:  #0ff; box-shadow: 0 0 3px#a242fb; }
+  50% { background-color: #1041FF; box-shadow: 0 0 40px #1041FF; }
+  100% { background-color:#af5aff; box-shadow: 0 0 3px  #0ff; }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+.jumping-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.jump-animation {
+  display: block !important;
+  animation-name: jump;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes jump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 0;
+  }
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.star {
+  display: inline-block;
+  font-size: 2vh;
+  color: gray;
+  cursor: pointer;
+  padding:0.2vh;
+}
+
+.footer {
+  position:sticky;
+  left: 0;
+  bottom:0;
+  width: 100%;
+  background-color:black;
+  color:cornsilk;
+  text-align: center;
+  height: 2.3%;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="shortcut icon" href="../pictures/עיגול ישר ומעודכן!!!.png" type="image/x-icon" />
+    <script src="../documents/project.js"></script>
+    <link rel="stylesheet" href="../documents/project.css">
+
+    <title>Simon</title>
+</head>
+<body class="body" onload="init()" >
+    <!-- <button onclick="" style="width:40vw;text-align:center;" id="startBtr">start</button> -->
+ <div style="display:grid;grid-template-columns: auto auto auto auto; height: 30vw;"> 
+<div><span class="score_neon"style="color:aliceblue; "> Score: <span id="id_score"  ></span></span></div>
+ <div></div><div></div>
+ <div id="all_img">
+ <img src="../pictures/light_blue_org.png" id="light_blue" class="pp" >
+ <img src="../pictures/purple_org.png" id="purple" class="pp" >
+<img src="../pictures/red_org.png" id="red" class="pp">
+<img src="../pictures/green_org.png" id="green" class="pp">
+<img src="../pictures/yellow_org.png" id="yellow" class="pp">
+<img src="../pictures/orange_org.png" id="orange" class="pp"></div>
+<img id="GAME_OVER" src="../pictures/ooo.jpg">
+
+
+<img id="myImage" class="jumping-image" src="../pictures/plus5.png" alt="Jumping Image" style="display: none;">
+<a href="game.html" ><img id="new_game"src="../pictures/nothing.png" style="bottom: 0;"></a>
+<span id="t" class="score_neon" style="right: 0;position: absolute;"></span>
+<audio id="op" controls="" autoplay="" style="visibility: hidden" muted="muted">
+    <source src="../music/light_blue.wav" type="audio/wav">
+    </audio>
+    <div id="footer" style="position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    color:black;
+    text-align: center;
+    display: none;">
+        <div >
+          
+          <div style="color:b;font-size: 2vh;bottom:0;color: aliceblue;">Did you like it?!Rate us</div> <div class="rating">
+        <span class="star" onclick="rate(1)">&#9733;</span>
+        <span class="star" onclick="rate(2)">&#9733;</span>
+        <span class="star" onclick="rate(3)">&#9733;</span>
+        <span class="star" onclick="rate(4)">&#9733;</span>
+        <span class="star" onclick="rate(5)">&#9733;</span>
+      <img id="new_game" src="../pictures/ooo.jpg" onclick="newGame()"style="width:1.3vh">
+            <p style="color: aliceblue;font-size: 2vh">copyright &copy;2023 js project. designed by
+                    <span style="color: aliceblue;font-size: 2vh">Dvori & Avigail</span>
+                  </p>
+            </div>
+      
+  
+</body>
+</html>
